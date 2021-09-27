@@ -619,7 +619,7 @@ footer ul {
         min-height: 400px;
         width: 98%;
         max-width: 900px;
-        margin: 0px auto;
+        margin: 30px auto;
         row-gap: 25px;
         column-gap: 20px;
     }
