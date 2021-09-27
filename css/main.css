@@ -407,7 +407,6 @@ header {
     margin: 0px auto;
     row-gap: 25px;
     column-gap: 20px;
-    -
 }
 
 .cell4-header {
@@ -632,6 +631,24 @@ footer ul {
     .onTop {
         z-index: 999;
         color: rgb(216, 216, 218);
+    }
+    .section2 {
+        width: 100%;
+        max-width: 900px;
+        margin: 0px auto;
+        row-gap: 25px;
+    }
+    .cell4-cell1 {
+        row-gap: 10px;
+        min-height: 400px;
+        min-width: 300px;
+        max-width: 600px;
+        flex-grow: 1;
+        flex-basis: 600px;
+        overflow: hidden;
+        padding: 20px 0px 20px 0px;
+        border-radius: 5px;
+        -background: linear-gradient( to bottom, rgba(212, 212, 212, 0.6), rgba(144, 144, 146, 0.4));
     }
     .cell4 {}
 }
