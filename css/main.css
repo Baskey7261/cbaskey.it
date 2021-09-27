@@ -11,6 +11,11 @@
     color: #333;
 }
 
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
 .mobile {
     display: none;
 }
