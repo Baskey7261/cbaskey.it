@@ -100,7 +100,6 @@ button {
     background: transparent;
     outline: none;
     border: 1px solid rgb(61, 61, 61);
-    ;
     border-radius: 5px;
     color: rgb(61, 61, 61);
 }
@@ -108,7 +107,7 @@ button {
 nav {
     display: flex;
     flex-direction: row;
-    column-gap: 25px;
+    gap: 25px;
     justify-content: flex-end;
     padding: 0px 0px 0px 0px;
     width: 96%;
@@ -195,7 +194,6 @@ header {
 
 .socLinks {
     display: flex;
-    gap: 18px;
     grid-row: 7/8;
     grid-column: 1/-1;
     justify-content: center;
@@ -205,10 +203,15 @@ header {
 .socLinks div {
     font-family: "icomoon";
     font-size: 1.5rem;
-    display: flexbox;
+    display: flex;
     color: #fff;
     cursor: pointer;
     font-weight: 200;
+}
+
+.socLinks div:nth-child(2) {
+    padding-left: 9px;
+    padding-right: 9px;
 }
 
 .fb::before {
@@ -504,7 +507,7 @@ footer ul {
 .footerSocial div {
     font-family: "icomoon";
     font-size: 1.2rem;
-    display: flexbox;
+    display: flex;
     color: rgb(187, 187, 186);
     cursor: pointer;
     font-weight: 200;
@@ -535,7 +538,7 @@ footer ul {
     nav {
         display: flex;
         flex-direction: row;
-        column-gap: 20px;
+        gap: 20px;
         justify-content: center;
         padding: 0px 0px 0px 0px;
         width: 96%;
@@ -624,8 +627,7 @@ footer ul {
         width: 98%;
         max-width: 900px;
         margin: 30px auto;
-        row-gap: 25px;
-        column-gap: 20px;
+        gap: 25px;
     }
     .cell1 {
         padding: 5%;
