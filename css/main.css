@@ -107,7 +107,6 @@ button {
 nav {
     display: flex;
     flex-direction: row;
-    gap: 25px;
     justify-content: flex-end;
     padding: 0px 0px 0px 0px;
     width: 96%;
@@ -121,6 +120,11 @@ nav div {
     font-weight: 100;
     cursor: pointer;
     color: rgb(219, 219, 219);
+}
+
+nav div:nth-child(3) {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 nav div:hover {
@@ -202,16 +206,16 @@ header {
 
 .socLinks div {
     font-family: "icomoon";
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     display: flex;
     color: #fff;
     cursor: pointer;
     font-weight: 200;
 }
 
-.socLinks div:nth-child(2) {
-    padding-left: 9px;
-    padding-right: 9px;
+.ins {
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .fb::before {
@@ -497,7 +501,6 @@ footer ul {
 
 .footerSocial {
     display: flex;
-    gap: 15px;
     grid-row: 2/3;
     grid-column: 3/5;
     justify-content: center;
