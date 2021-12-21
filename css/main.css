@@ -251,7 +251,6 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 40px;
-    min-height: 400px;
     width: 90%;
     margin: 60px auto;
     gap: 25px;
@@ -321,92 +320,6 @@ header {
     margin-bottom: auto;
 }
 
-@media screen and (max-width: 800px) {
-    .container {
-        width: 90%;
-        margin: 0px auto;
-    }
-    .cell2 {
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: auto;
-        max-width: 250px;
-        height: 100%;
-        margin: 0px 5px 0px 5px;
-        grid-row: 1/3;
-        grid-column: 3/4;
-    }
-    .cell2 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .cell3 {
-        flex-grow: 3;
-        flex-shrink: 1;
-        flex-basis: 250px;
-        padding: 5% 0px 0px 3%;
-        grid-row: 2/3;
-        grid-column: 1/3;
-    }
-    .cell1 {
-        flex-grow: 3;
-        flex-shrink: 1;
-        flex-basis: 250px;
-        padding: 5% 0px 0px 3%;
-        grid-row: 1/2;
-        grid-column: 1/3;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .container {
-        padding: 0%;
-        width: 100%;
-        margin: 60px auto;
-    }
-    .container>div {
-        padding: 0%;
-        max-width: 80%;
-        margin: 0px auto;
-    }
-    .cell1 {
-        flex-grow: 3;
-        flex-shrink: 1;
-        width: 100%;
-        padding: 5% 0px 0px 0%;
-        grid-row: 1/2;
-        grid-column: 1/-1;
-    }
-    .cell2 {
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: auto;
-        width: 90%;
-        grid-row: 2/3;
-        grid-column: 1/-1;
-    }
-    .cell3 {
-        flex-grow: 3;
-        flex-shrink: 1;
-        width: 100%;
-        padding: 5% 0px 0px 0%;
-        grid-row: 3/4;
-        grid-column: 1/-1;
-    }
-    .cell3Text {
-        row-gap: 0PX;
-        padding: 0px 0px 0px 0px;
-        max-width: 100%;
-    }
-    .mobile {
-        display: block;
-    }
-    .desk {
-        display: none;
-    }
-}
-
 .section2 {
     display: flex;
     flex-direction: row;
@@ -426,15 +339,22 @@ header {
     margin: 0px auto;
 }
 
+.cell4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
 .cell4-cell1 {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
     min-height: 400px;
     min-width: 300px;
-    max-width: 600px;
     flex-grow: 1;
-    flex-basis: 600px;
+    flex-basis: 350px;
     overflow: hidden;
     padding: 20px;
     border-radius: 5px;
@@ -531,6 +451,92 @@ footer ul {
     display: block;
 }
 
+@media screen and (max-width: 800px) {
+    .container {
+        width: 90%;
+        margin: 0px auto;
+    }
+    .cell2 {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        max-width: 250px;
+        height: 100%;
+        margin: 0px 5px 0px 5px;
+        grid-row: 1/3;
+        grid-column: 3/4;
+    }
+    .cell2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .cell3 {
+        flex-grow: 3;
+        flex-shrink: 1;
+        flex-basis: 250px;
+        padding: 5% 0px 0px 3%;
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    .cell1 {
+        flex-grow: 3;
+        flex-shrink: 1;
+        flex-basis: 250px;
+        padding: 5% 0px 0px 3%;
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        padding: 0%;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .container>div {
+        padding: 0%;
+        max-width: 80%;
+        margin: 0px auto;
+    }
+    .cell1 {
+        flex-grow: 3;
+        flex-shrink: 1;
+        width: 100%;
+        padding: 5% 0px 0px 0%;
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+    .cell2 {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        width: 90%;
+        grid-row: 2/3;
+        grid-column: 1/-1;
+    }
+    .cell3 {
+        flex-grow: 3;
+        flex-shrink: 1;
+        width: 100%;
+        padding: 5% 0px 0px 0%;
+        grid-row: 3/4;
+        grid-column: 1/-1;
+    }
+    .cell3Text {
+        row-gap: 0PX;
+        padding: 0px 0px 0px 0px;
+        max-width: 100%;
+    }
+    .mobile {
+        display: block;
+    }
+    .desk {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .mobile {
         display: block;
@@ -625,11 +631,10 @@ footer ul {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        padding-bottom: 40px;
-        min-height: 400px;
+        padding: 0px 0px 0px 0px;
         width: 98%;
         max-width: 900px;
-        margin: 30px auto;
+        margin: 0px auto;
         gap: 25px;
     }
     .cell1 {
@@ -642,23 +647,31 @@ footer ul {
         z-index: 999;
         color: rgb(216, 216, 218);
     }
+    .section1 {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 0px 0px 0px;
+        border: 1px solid red;
+    }
     .section2 {
         width: 100%;
         max-width: 900px;
         margin: 0px auto;
-        row-gap: 25px;
+    }
+    .cell4 {
+        margin: 0px 0px 0px 0px;
     }
     .cell4-cell1 {
         row-gap: 10px;
         min-height: 400px;
         min-width: 300px;
-        max-width: 600px;
-        flex-grow: 1;
-        flex-basis: 600px;
+        width: 96%;
+        flex-grow: 0;
+        flex-basis: auto;
         overflow: hidden;
-        padding: 20px 0px 20px 0px;
+        padding: 0px 20px 40px 20px;
         border-radius: 5px;
+        margin: 0px auto;
         -background: linear-gradient( to bottom, rgba(212, 212, 212, 0.6), rgba(144, 144, 146, 0.4));
     }
-    .cell4 {}
 }
